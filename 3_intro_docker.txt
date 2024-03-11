@@ -1,0 +1,11 @@
+Introduction to Docker
+
+
+
+export REGION=
+
+curl -LO raw.githubusercontent.com/quiccklabs/Labs_solutions/master/Introduction%20to%20Docker/quicklabgsp055.sh
+
+sudo chmod +x quicklabgsp055.sh
+
+./quicklabgsp055.sh

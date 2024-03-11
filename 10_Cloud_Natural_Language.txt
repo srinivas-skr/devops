@@ -1,0 +1,11 @@
+Cloud Natural Language API: Qwik Start
+
+
+curl -LO raw.githubusercontent.com/QUICK-GCP-LAB/2-Minutes-Labs-Solutions/main/Cloud%20Natural%20Language%20API%20Qwik%20Start/gsp097.sh
+
+sudo chmod +x gsp097.sh
+
+./gsp097.sh
+
+
+// not complete run last task in vm instance  ssh 

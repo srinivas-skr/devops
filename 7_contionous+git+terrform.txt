@@ -1,0 +1,16 @@
+// 7th  Continuous Delivery with Jenkins in Kubernetes Engine
+
+need to wait in middle takes lot of time
+task7 complete after left out executed 
+
+all code direct copy paste
+
+
+
+
+//8th  cloud source repository git version  =Cloud Source Repositories: Qwik Start
+task1 copy paste end REPO DEMO
+
+
+//9th  deployment of kubernetes load balancer with terrform  = Deploy Kubernetes Load Balancer Service with Terraform
+ direct copy paste all
