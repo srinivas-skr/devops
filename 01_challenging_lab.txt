@@ -32,8 +32,7 @@ TASK 2
 		
 TASK 3
 		  
-		  
-		  cat << EOF > startup.sh
+cat << EOF > startup.sh
 #! /bin/bash
 apt-get update
 apt-get install -y nginx
@@ -46,13 +45,12 @@ gcloud compute instance-templates create web-server-template \
        --metadata-from-file startup-script=startup.sh \
        --machine-type g1-small \
        --region $REGION
+	    
+	   
+gcloud compute target-pools create nginx-pool --region $REGION
 	   
 	   
-	   
-	   gcloud compute target-pools create nginx-pool --region $REGION
-	   
-	   
-	   gcloud compute instance-groups managed create web-server-group \
+gcloud compute instance-groups managed create web-server-group \
 --base-instance-name web-server \
 --size 2 \
 --template web-server-template \
@@ -81,14 +79,10 @@ gcloud compute firewall-rules create $FIREWALL \
 	   
 	   gcloud compute url-maps create web-server-map \
        --default-service web-server-backend
-	   
-	   
 
 	   
 	   gcloud compute target-http-proxies create http-lb-proxy \
        --url-map web-server-map
-
-
 
 
 gcloud compute forwarding-rules create $FIREWALL \
